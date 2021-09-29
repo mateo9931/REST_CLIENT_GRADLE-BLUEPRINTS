@@ -30,20 +30,24 @@ public class InMemoryBlueprintPersistence implements BlueprintsPersistence{
         
         //load stub data
         Point[] pts = new Point[]{new Point(140, 140),new Point(115, 115)};
-        Blueprint bp = new Blueprint("_authorname_", "_bpname_ ",pts);
+        Blueprint bp = new Blueprint("JhonConnor", "_bpname_ ",pts);
         blueprints.put(new Tuple<>(bp.getAuthor(),bp.getName()), bp);
         
-        Point[] ptsJp=new Point[]{new Point(88, 45),new Point(39, 64),new Point(1254,546),new Point(7,8),new Point(4,2),new Point(11,22)};
+        Point[] ptsJp=new Point[]{new Point(88, 45),new Point(39, 64),new Point(154,56),new Point(7,8),new Point(4,2),new Point(11,22)};
         Blueprint bpJp=new Blueprint("author1", "Blueprint_a",ptsJp);
         blueprints.put(new Tuple<>(bpJp.getAuthor(),bpJp.getName()), bpJp);
         
-        Point[] ptsSt=new Point[]{new Point(0, 1),new Point(1, 0)};
+        Point[] ptsSt=new Point[]{new Point(0, 1),new Point(1, 0), new Point(40, 22)};
         Blueprint bpSt=new Blueprint("author2", "Blueprint_b",ptsSt);
         blueprints.put(new Tuple<>(bpSt.getAuthor(),bpSt.getName()), bpSt);
         
-        Point[] ptsSt2=new Point[]{new Point(50, 1),new Point(1, 05)};
+        Point[] ptsSt2=new Point[]{new Point(50, 1),new Point(1, 5),new Point(50, 80)};
         Blueprint bpSt2=new Blueprint("author1", "School_blueprint",ptsSt2);
         blueprints.put(new Tuple<>(bpSt2.getAuthor(),bpSt2.getName()), bpSt2);
+        
+        Point[] ptsSt3=new Point[]{new Point(200, 200),new Point(3, 5),new Point(70, 80),new Point(1, 3)};
+        Blueprint bpSt3=new Blueprint("author1", "rare_blueprint",ptsSt3);
+        blueprints.put(new Tuple<>(bpSt3.getAuthor(),bpSt3.getName()), bpSt3);
         
     }    
     
